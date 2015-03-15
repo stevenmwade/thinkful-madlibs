@@ -1,0 +1,65 @@
+<div layout="column" layout-align="space-between center">
+	<header layout="row" layout-align="center center">
+		<img src="images/mad-lib-happy-face.png" alt="Madlib happy face">
+		<img src="images/ng-mad-libs-logo.png" alt="Madlib logo">
+	</header>
+	<md-content layout="row" class="md-padding">
+		<section class="ml-input-group" layout="row" flex>
+			<div class="ml-input" flex layout="column" layout-align="space-between center">
+				<md-input-container flex>
+					<label>Male name</label>
+					<input type="text" ng-model="ml.maleName">
+				</md-input-container>
+				<md-input-container flex>
+					<label>Job title</label>
+					<input type="text" ng-model="ml.jobTitle">
+				</md-input-container>
+				<md-input-container flex>
+					<label>Tedious task</label>
+					<input type="text" ng-model="ml.tediousTask">
+				</md-input-container>
+			</div>
+		</section>
+		<section class="ml-input-group" layout="row" flex>
+			<div class="ml-input" flex layout="column" layout-align="space-between center">
+				<md-input-container flex>
+					<label>Dirty task</label>
+					<input type="text" ng-model="ml.dirtyTask">
+				</md-input-container>
+				<md-input-container flex>
+					<label>Celebrity</label>
+					<input type="text" ng-model="ml.celebrity">
+				</md-input-container>
+				<md-input-container flex>
+					<label>Useless skill</label>
+					<input type="text" ng-model="ml.uselessSkill">
+				</md-input-container>
+			</div>
+		</section>
+		<section class="ml-input-group" layout="row" flex>
+			<div class="ml-input" flex layout="column" layout-align="space-between center">
+				<md-input-container flex>
+					<label>Obnoxious Celebrity</label>
+					<input type="text" ng-model="ml.obnoxiousCelebrity">
+				</md-input-container>
+				<md-input-container flex>
+					<label>Huge number</label>
+					<input type="number" ng-model="ml.hugeNumber">
+				</md-input-container>
+				<md-input-container flex>
+					<label>Adjective</label>
+					<input type="text" ng-model="ml.adjective">
+				</md-input-container>
+			</div>
+		</section>
+	</md-content>
+	
+	<md-content class="md-padding" layout="column" layout-align="space-between center" style="width: 50%">
+		<p>
+			{{ml.maleName}} was a {{ml.jobTitle}} who loved technology. Although he loved parts of his job, he absolutely hated  {{ml.tediousTask}} and {{ml.dirtyTask}}. So, {{ml.maleName}} met with his life mentor {{ml.celebrity}} who told him to learn how to {{ml.uselessSkill}} with Thinkful. Thinkful didn't offer a course on {{ml.uselessSkill}} so he studied programming instead.
+		</p>
+		<p>
+			What a great decision! With his new skills, {{ml.maleName}} built a(n) {{ml.adjective}} robot named {{ml.obnoxiousCelebrity}} that not only loved {{ml.dirtyTask}} but did it {{ml.hugeNumber}} faster.
+		</p>
+	</md-content>
+</div>
