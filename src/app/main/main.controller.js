@@ -7,7 +7,7 @@
 	MainCtrl.$inject = ['$scope'];
 
 	function MainCtrl($scope) {
-		$scope.test = 'test';
+		$scope.gender = null;
 	}
 
 
